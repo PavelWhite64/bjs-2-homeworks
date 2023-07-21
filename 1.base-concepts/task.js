@@ -18,17 +18,17 @@ function solveEquation(a, b, c) {
 }
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
-	let percent = parseInt(percent);
-	let contribution = parseInt(contribution);
-	let amount = parseInt(amount);
+	let per = parseInt(percent);
+	let con = parseInt(contribution);
+	let amo = parseInt(amount);
 	if (isNaN(percent) || percent < 0) {
 		return 'fasle';
 	} else {
-		let s = contribution - amount;
+		let s = con - amo;
 		let n = countMonths;
-		let pay = s * (percent + (percent / (((1 + percent) ** n) - 1)));
+		let pay = s * (per + (per / (((1 + per) ** n) - 1)));
 		let totalAmount = (pay * n).toFixed(2);
 		console.log(totalAmount);
-		return +totalAmount
+		return +totalAmount;
 	}
 }
