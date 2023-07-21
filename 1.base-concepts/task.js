@@ -24,7 +24,7 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
 	if (isNaN(percent) || percent < 0) {
 		return 'fasle';
 	} else {
-		let s = con - amo;
+		let s = amo - con;
 		let n = countMonths;
 		let pay = s * (per + (per / (((1 + per) ** n) - 1)));
 		let totalAmount = (pay * n).toFixed(2);
