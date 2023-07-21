@@ -18,7 +18,7 @@ function solveEquation(a, b, c) {
 }
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
-	let per = parseInt(percent);
+	let per = parseInt(percent) / 100 / 12;
 	let con = parseInt(contribution);
 	let amo = parseInt(amount);
 	if (isNaN(percent) || percent < 0) {
