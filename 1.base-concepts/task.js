@@ -14,14 +14,14 @@ function solveEquation(a, b, c) {
   return arr;
 }
 
-function setNumber() {
-  const a = parseFloat(prompt("Введите коэффициент a: "));
-  const b = parseFloat(prompt("Введите коэффициент b: "));
-  const c = parseFloat(prompt("Введите коэффициент c: "));
+// function setNumber() {
+//   const a = parseFloat(prompt("Введите коэффициент a: "));
+//   const b = parseFloat(prompt("Введите коэффициент b: "));
+//   const c = parseFloat(prompt("Введите коэффициент c: "));
 
-  if (isNaN(a) || isNaN(b) || isNaN(c)) {
-    console.log("Ошибка: введите корректное число");
-  }
+//   if (isNaN(a) || isNaN(b) || isNaN(c)) {
+//     console.log("Ошибка: введите корректное число");
+//   }
 
   let arr = solutionResult(a, b, c);
 
