@@ -13,12 +13,12 @@ function getArrayParams(...arr) {
 			min = arr[i];
 		}
 	}
-	avg = Number(sum / arr.length).toFixed(2)
+	avg = Number((sum / arr.length).toFixed(2))
 
 	return {
 		min: min,
 		max: max,
-		avg: Number(avg)
+		avg: avg,
 	};
 }
 
